@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shafa_25_birthday/home_page.dart';
+import 'package:shafa_25_birthday/pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());

@@ -5,7 +5,7 @@ class TextStyles {
 
   // ExtraBold(w800), 60pt, Stix
   static TextStyle extraBold60ptStix([Color? color]) {
-    return GoogleFonts.stixTwoText(
+    return GoogleFonts.plusJakartaSans(
       fontSize: 60,
       fontWeight: FontWeight.w800,
       color: color ?? AppColors.black,
@@ -13,7 +13,7 @@ class TextStyles {
   }
   // ExtraBold(w800), 28pt, Stix
   static TextStyle extraBold28ptStix([Color? color]) {
-    return GoogleFonts.stixTwoText(
+    return GoogleFonts.plusJakartaSans(
       fontSize: 28,
       fontWeight: FontWeight.w800,
       color: color ?? AppColors.black,
@@ -22,7 +22,7 @@ class TextStyles {
 
   // ExtraBold(w800), 20pt, Stix
   static TextStyle extraBold20ptStix([Color? color]) {
-    return GoogleFonts.stixTwoText(
+    return GoogleFonts.plusJakartaSans(
       fontSize: 20,
       fontWeight: FontWeight.w800,
       color: color ?? AppColors.black,
