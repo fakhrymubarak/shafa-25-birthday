@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 part 'colors.dart';
-
 part 'text_styles.dart';
 
 // App Themes
@@ -25,12 +24,19 @@ ThemeData getAppTheme(BuildContext context) {
   // Generate text theme dynamically based on device type
   TextTheme generateTextTheme(bool isMobile) {
     return baseTheme.textTheme.copyWith(
-      headlineLarge: isMobile ? TextStyles.extraBold20ptStix() : TextStyles.extraBold28ptStix(),
-      headlineMedium: isMobile ? TextStyles.extraBold16pt() : TextStyles.extraBold24pt(),
-      headlineSmall: isMobile ? TextStyles.extraBold14pt() : TextStyles.extraBold20pt(),
-      labelLarge: isMobile ? TextStyles.semiBold14pt() : TextStyles.semiBold24pt(),
-      labelMedium: isMobile ? TextStyles.semiBold12pt() : TextStyles.semiBold20pt(),
-      labelSmall: isMobile ? TextStyles.semiBold10pt() : TextStyles.semiBold16pt(),
+      headlineLarge: isMobile
+          ? TextStyles.extraBold20ptStix()
+          : TextStyles.extraBold28ptStix(),
+      headlineMedium:
+          isMobile ? TextStyles.extraBold16pt() : TextStyles.extraBold24pt(),
+      headlineSmall:
+          isMobile ? TextStyles.extraBold14pt() : TextStyles.extraBold20pt(),
+      labelLarge:
+          isMobile ? TextStyles.semiBold14pt() : TextStyles.semiBold24pt(),
+      labelMedium:
+          isMobile ? TextStyles.semiBold12pt() : TextStyles.semiBold20pt(),
+      labelSmall:
+          isMobile ? TextStyles.semiBold10pt() : TextStyles.semiBold16pt(),
       bodyLarge: isMobile ? TextStyles.reg14pt() : TextStyles.reg24pt(),
       bodyMedium: isMobile ? TextStyles.reg12pt() : TextStyles.reg20pt(),
       bodySmall: isMobile ? TextStyles.reg10pt() : TextStyles.reg16pt(),
@@ -46,15 +52,15 @@ ThemeData getAppTheme(BuildContext context) {
         foregroundColor: AppColors.onPrimary,
         backgroundColor: AppColors.primary,
         textStyle: TextStyles.extraBold16pt(),
+        minimumSize: Size(100, 60),
         elevation: 0,
         padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
       ),
     ),
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
-        foregroundColor: AppColors.deepLavender,
-        textStyle: TextStyles.extraBold16pt()
-      ),
+          foregroundColor: AppColors.deepLavender,
+          textStyle: TextStyles.extraBold16pt()),
     ),
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(

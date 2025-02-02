@@ -14,6 +14,7 @@ class AppColors {
   static const deepLavender = Color(0xFF6B5B95); // Deep Lavender
   static const roseQuartz = Color(0xFFF7CAC9); // Rose Quartz
   static const oliveGreen = Color(0xFF88B04B); // Olive Green
+  static const yellow = Color(0xFFFFEB99); // Olive Green
   static const retroRed = Color(0xFFFF4E50);
 
   static const primary = AppColors.coralRed;
