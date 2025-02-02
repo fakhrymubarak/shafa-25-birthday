@@ -20,7 +20,9 @@ class WishPage extends StatelessWidget {
                 ElevatedButton(onPressed: () {
                   Navigator.pop(context);
                 }, child: Text("Prev Page")),
-                ElevatedButton(onPressed: () {}, child: Text("Next Page"))
+                ElevatedButton(onPressed: () {
+
+                }, child: Text("Next Page"))
               ],
             )
           ],
