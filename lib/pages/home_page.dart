@@ -28,40 +28,47 @@ class MyHomePage extends StatelessWidget {
       }
     });
 
-    return ChangeNotifierProvider(
-      create: (_) => HomeViewModel(),
-      child: ConfettiPageWrapper(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(height: margin),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => WishPage()),
-                );
-              },
-              child: Text("Tap for Your BF’s Wish! (˶ᵔ ᵕ ᵔ˶)"),
+    return Scaffold(
+      body: ChangeNotifierProvider(
+        create: (_) => HomeViewModel(),
+        child: Center(
+          child: ConstrainedBox(
+            constraints: BoxConstraints(maxWidth: 1400),
+            child: ConfettiPageWrapper(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(height: margin),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => WishPage()),
+                      );
+                    },
+                    child: Text("Tap for Your BF’s Wish! (˶ᵔ ᵕ ᵔ˶)"),
+                  ),
+                  SizedBox(height: margin),
+                  SizedBox(
+                    height: screenHeight * 0.15,
+                    child: TopCatsGifWidget(),
+                  ),
+                  SizedBox(height: margin),
+                  Text(
+                    "Happy 25ᵗʰ Birthday \nShafaa Salsabilaaaa \n⸜(｡˃ ᵕ ˂ )⸝♡",
+                    style: isMobile
+                        ? TextStyles.extraBold28ptStix()
+                        : TextStyles.extraBold60ptStix(),
+                    textAlign: TextAlign.center,
+                  ),
+                  SizedBox(height: margin),
+                  AudioPlayerWidget(),
+                  SizedBox(height: margin),
+                ],
+              ),
             ),
-            SizedBox(height: margin),
-            SizedBox(
-              height: screenHeight * 0.15,
-              child: TopCatsGifWidget(),
-            ),
-            SizedBox(height: margin),
-            Text(
-              "Happy 25ᵗʰ Birthday \nShafaa Salsabilaaaa \n⸜(｡˃ ᵕ ˂ )⸝♡",
-              style: isMobile
-                  ? TextStyles.extraBold28ptStix()
-                  : TextStyles.extraBold60ptStix(),
-              textAlign: TextAlign.center,
-            ),
-            SizedBox(height: margin),
-            AudioPlayerWidget(),
-            SizedBox(height: margin),
-          ],
+          ),
         ),
       ),
     );

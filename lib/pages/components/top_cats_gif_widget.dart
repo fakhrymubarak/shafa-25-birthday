@@ -42,11 +42,11 @@ class _TopCatsGifWidgetState extends State<TopCatsGifWidget>
           SizedBox(width: 20), // Reduce spacing to prevent overflow
           _buildGif(Assets.gifHappyCat),
           SizedBox(width: 20),
-          _buildGif(Assets.gifCatConfused),
+          _buildGif(Assets.gifOiiai),
           SizedBox(width: 20),
           _buildGif(Assets.gifCatDance),
           SizedBox(width: 20),
-          _buildGif(Assets.gifOiiai),
+          _buildGif(Assets.gifCatConfused),
         ],
       ),
     );

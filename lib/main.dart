@@ -14,14 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Happy 25ᵗʰ Birthday Shafaa ♡',
       theme: getAppTheme(context),
-      home: Scaffold(
-        body: Center(
-          child: ConstrainedBox(
-            constraints: BoxConstraints(maxWidth: 1400),
-            child: const MyHomePage(),
-          ),
-        ),
-      ),
+      home: const MyHomePage(),
     );
   }
 }
