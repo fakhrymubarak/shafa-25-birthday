@@ -5,8 +5,9 @@ import 'package:shafa_25_birthday/pages/components/dialog.dart';
 import 'package:shafa_25_birthday/pages/components/top_cats_gif_widget.dart';
 import 'package:shafa_25_birthday/pages/home_viewmodel.dart';
 import 'package:shafa_25_birthday/pages/music_player_widget.dart';
-import 'package:shafa_25_birthday/pages/wish_page.dart';
 import 'package:shafa_25_birthday/themes/themes.dart';
+
+import 'confirmation/confirmation_page.dart';
 
 class MyHomePage extends StatelessWidget {
   static bool _dialogShown = false;
@@ -19,7 +20,7 @@ class MyHomePage extends StatelessWidget {
     final double screenWidth = mediaQuery.size.width;
     final double screenHeight = mediaQuery.size.height;
     final bool isMobile = screenWidth < 600;
-    final double margin = screenHeight * 0.075;
+    final double margin = screenHeight * 0.05;
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (isMobile && !_dialogShown) {
@@ -44,7 +45,8 @@ class MyHomePage extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => WishPage()),
+                        MaterialPageRoute(
+                            builder: (context) => ConfirmationPage()),
                       );
                     },
                     child: Text("Tap for Your BF’s Wish! (˶ᵔ ᵕ ᵔ˶)"),

@@ -4,7 +4,6 @@ class Assets {
   Assets._();
 
   static const _assetMusicPath = 'music';
-  static const _assetIconPath = 'assets/icons';
   static const _assetImagePath = 'assets/images';
 
   static const gifCatConfused = "$_assetImagePath/gif_cat_confused.gif";
