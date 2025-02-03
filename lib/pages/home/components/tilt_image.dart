@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shafa_25_birthday/pages/home_viewmodel.dart';
+import 'package:shafa_25_birthday/pages/home/home_viewmodel.dart';
 
 class TiltImageWidget extends StatefulWidget {
   final String assetPath;

@@ -3,8 +3,8 @@ import 'dart:math';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shafa_25_birthday/pages/components/tilt_image.dart';
-import 'package:shafa_25_birthday/pages/home_viewmodel.dart';
+import 'package:shafa_25_birthday/pages/home/components/tilt_image.dart';
+import 'package:shafa_25_birthday/pages/home/home_viewmodel.dart';
 import 'package:shafa_25_birthday/themes/resources/resource.dart';
 
 class ConfettiPageWrapper extends StatefulWidget {

@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:shafa_25_birthday/pages/confirmation/confirmation_viewmodel.dart';
 import 'package:shafa_25_birthday/themes/themes.dart';
 
-import '../wish_page.dart';
+import '../wish/wish_page.dart';
 
 class ConfirmationPage extends StatelessWidget {
   const ConfirmationPage({super.key});

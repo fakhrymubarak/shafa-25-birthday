@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 import 'package:provider/provider.dart';
-import 'package:shafa_25_birthday/pages/wish_viewmodel.dart';
+import 'package:shafa_25_birthday/pages/wish/wish_viewmodel.dart';
 import 'package:shafa_25_birthday/themes/themes.dart';
 
 class WishWidget extends StatelessWidget {

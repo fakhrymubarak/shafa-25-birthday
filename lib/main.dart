@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shafa_25_birthday/pages/home_page.dart';
+import 'package:shafa_25_birthday/pages/home/home_page.dart';
 import 'package:shafa_25_birthday/themes/styles/app_themes.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';

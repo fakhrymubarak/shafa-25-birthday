@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shafa_25_birthday/pages/home_viewmodel.dart';
+import 'package:shafa_25_birthday/pages/home/home_viewmodel.dart';
 import 'package:shafa_25_birthday/themes/styles/app_themes.dart';
 
 class AudioPlayerWidget extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gif/gif.dart';
-import 'package:shafa_25_birthday/pages/components/wish_widget.dart';
+import 'package:shafa_25_birthday/pages/wish/components/wish_widget.dart';
 import 'package:shafa_25_birthday/themes/themes.dart';
 
 class WishPage extends StatelessWidget {

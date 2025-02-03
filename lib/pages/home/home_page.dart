@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shafa_25_birthday/pages/components/confetti_page_wrapper.dart';
+import 'package:shafa_25_birthday/pages/home/components/confetti_page_wrapper.dart';
 import 'package:shafa_25_birthday/pages/components/dialog.dart';
-import 'package:shafa_25_birthday/pages/components/top_cats_gif_widget.dart';
-import 'package:shafa_25_birthday/pages/home_viewmodel.dart';
-import 'package:shafa_25_birthday/pages/music_player_widget.dart';
+import 'package:shafa_25_birthday/pages/home/components/top_cats_gif_widget.dart';
+import 'package:shafa_25_birthday/pages/home/home_viewmodel.dart';
+import 'package:shafa_25_birthday/pages/home/components/music_player_widget.dart';
 import 'package:shafa_25_birthday/themes/themes.dart';
 
-import 'confirmation/confirmation_page.dart';
+import '../confirmation/confirmation_page.dart';
 
 class MyHomePage extends StatelessWidget {
   static bool _dialogShown = false;
