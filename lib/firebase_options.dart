@@ -52,6 +52,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '673865577680',
     projectId: 'shafa-25',
     authDomain: 'shafa-25.firebaseapp.com',
+    databaseURL: 'https://shafa-25-default-rtdb.firebaseio.com',
     storageBucket: 'shafa-25.firebasestorage.app',
   );
 
@@ -60,6 +61,7 @@ class DefaultFirebaseOptions {
     appId: '1:673865577680:android:90691bc3b1c9d67bd61ad5',
     messagingSenderId: '673865577680',
     projectId: 'shafa-25',
+    databaseURL: 'https://shafa-25-default-rtdb.firebaseio.com',
     storageBucket: 'shafa-25.firebasestorage.app',
   );
 
@@ -68,7 +70,9 @@ class DefaultFirebaseOptions {
     appId: '1:673865577680:ios:2d450a986b9843a0d61ad5',
     messagingSenderId: '673865577680',
     projectId: 'shafa-25',
+    databaseURL: 'https://shafa-25-default-rtdb.firebaseio.com',
     storageBucket: 'shafa-25.firebasestorage.app',
     iosBundleId: 'com.example.shafa25Birthday',
   );
+
 }

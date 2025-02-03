@@ -26,5 +26,7 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:673865577680:ios:2d450a986b9843a0d61ad5</string>
+	<key>DATABASE_URL</key>
+	<string>https://shafa-25-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>
