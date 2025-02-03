@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "673865577680",
+    "project_id": "shafa-25",
+    "storage_bucket": "shafa-25.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673865577680:android:90691bc3b1c9d67bd61ad5",
+        "android_client_info": {
+          "package_name": "com.example.shafa_25_birthday"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPpA12gYMeBYU3HGUgDOHrQ8mS1JpeFFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
