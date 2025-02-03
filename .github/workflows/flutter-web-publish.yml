@@ -24,11 +24,15 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      # Step 4: Build Flutter web
+      # Step 4: Copy Favicon (Ensure it is included in the build)
+      - name: Copy favicon to web directory
+        run: cp web/favicon.png web/favicon.ico web/index.html build/web/ || true
+
+      # Step 5: Build Flutter Web
       - name: Build Flutter Web
         run: flutter build web --release --base-href="/shafa-25-birthday/"
 
-      # Step 5: Deploy to GitHub Pages
+      # Step 6: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
