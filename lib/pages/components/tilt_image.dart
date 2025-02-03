@@ -40,6 +40,7 @@ class _TiltImageWidgetState extends State<TiltImageWidget>
       _animationController.stop();
       _animationController.value = 0; // Reset tilt when stopped
     }
+    final bool isMobile = MediaQuery.of(context).size.width < 600;
 
     return AnimatedBuilder(
       animation: _animationController,
@@ -52,7 +53,7 @@ class _TiltImageWidgetState extends State<TiltImageWidget>
               : Matrix4.rotationZ(_animationController.value),
           child: Image.asset(
             widget.assetPath,
-            height: 500,
+            height: isMobile ? 250 : 500,
           ),
         );
       },

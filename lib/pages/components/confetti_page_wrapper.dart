@@ -24,12 +24,15 @@ class _ConfettiPageWrapperState extends State<ConfettiPageWrapper> {
   @override
   void initState() {
     super.initState();
-    _controllerTopCenter =
-        ConfettiController(duration: const Duration(seconds: 15));
-    _controllerTopLeft =
-        ConfettiController(duration: const Duration(seconds: 15));
-    _controllerTopRight =
-        ConfettiController(duration: const Duration(seconds: 15));
+    _controllerTopCenter = ConfettiController(
+      duration: const Duration(seconds: 15),
+    );
+    _controllerTopLeft = ConfettiController(
+      duration: const Duration(seconds: 15),
+    );
+    _controllerTopRight = ConfettiController(
+      duration: const Duration(seconds: 15),
+    );
   }
 
   @override
@@ -46,10 +49,11 @@ class _ConfettiPageWrapperState extends State<ConfettiPageWrapper> {
       _controllerTopLeft.stop();
     }
 
+    final bool isMobile = MediaQuery.of(context).size.width < 600;
     return SafeArea(
       child: Stack(
         children: [
-          widget.child,
+          Center(child: widget.child),
           Positioned(
             bottom: 0,
             left: 0,
@@ -62,7 +66,7 @@ class _ConfettiPageWrapperState extends State<ConfettiPageWrapper> {
           ),
           Positioned(
             top: 0,
-            left: 100,
+            left: isMobile ? 25 : 100,
             child: ConfettiWidget(
               confettiController: _controllerTopLeft,
               blastDirection: pi,
@@ -78,7 +82,7 @@ class _ConfettiPageWrapperState extends State<ConfettiPageWrapper> {
           ),
           Positioned(
             top: 0,
-            right: 100,
+            right: isMobile ? 25 : 100,
             child: ConfettiWidget(
               confettiController: _controllerTopRight,
               blastDirection: pi,
