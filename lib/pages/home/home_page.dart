@@ -58,7 +58,7 @@ class MyHomePage extends StatelessWidget {
                   ),
                   SizedBox(height: margin),
                   Text(
-                    "Happy 25ᵗʰ Birthday \nShafaa Salsabilaaaa \n⸜(｡˃ ᵕ ˂ )⸝♡",
+                    "Happy 26ᵗʰ Birthday \nShafaa Salsabilaaaa \n⸜(｡˃ ᵕ ˂ )⸝♡",
                     style: isMobile
                         ? TextStyles.extraBold28ptStix()
                         : TextStyles.extraBold60ptStix(),
