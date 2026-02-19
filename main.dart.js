@@ -87440,7 +87440,7 @@ A.M9.prototype={
 M(a){var s=null,r=A.bH(a,s,t.l).w.a,q=r.b,p=r.a<600,o=q*0.05
 $.a3.p2$.push(new A.aaV(p,a))
 r=A.K8(!1,A.dD("Tap for Your BF\u2019s Wish! (\u02f6\u1d54 \u1d55 \u1d54\u02f6)",s,s,s,s,s,s),s,s,B.cG,s,s,s,s,new A.aaW(a),s,s)
-return A.adR(s,A.au5(A.hM(new A.fE(new A.ab(0,1400,0,1/0),new A.xL(A.os(A.b([new A.bC(s,o,s,s),r,new A.bC(s,o,s,s),new A.bC(s,q*0.15,new A.CT(s),s),new A.bC(s,o,s,s),A.dD("Happy 25\u1d57\u02b0 Birthday \nShafaa Salsabilaaaa \n\u2e1c(\uff61\u02c3 \u1d55 \u02c2 )\u2e1d\u2661",s,s,s,p?A.ahP():A.avI(),B.ci,s),new A.bC(s,o,s,s),new A.Il(s),new A.bC(s,o,s,s)],t.D),B.b1,B.dn,B.bz,s),s),s),s,s),new A.aaX(),t.X7))}}
+return A.adR(s,A.au5(A.hM(new A.fE(new A.ab(0,1400,0,1/0),new A.xL(A.os(A.b([new A.bC(s,o,s,s),r,new A.bC(s,o,s,s),new A.bC(s,q*0.15,new A.CT(s),s),new A.bC(s,o,s,s),A.dD("Happy 26\u1d57\u02b0 Birthday \nShafaa Salsabilaaaa \n\u2e1c(\uff61\u02c3 \u1d55 \u02c2 )\u2e1d\u2661",s,s,s,p?A.ahP():A.avI(),B.ci,s),new A.bC(s,o,s,s),new A.Il(s),new A.bC(s,o,s,s)],t.D),B.b1,B.dn,B.bz,s),s),s),s,s),new A.aaX(),t.X7))}}
 A.aaV.prototype={
 $1(a){if(this.a&&!$.aAC){$.aAC=!0
 A.aXP(this.b)}},
